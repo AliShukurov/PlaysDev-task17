@@ -3,9 +3,7 @@ version: "3"
 services:
   nginx_container:
     container_name: nginx
-    build:
-      context: .
-      dockerfile: alishukurov/nginx-task17:latest
+    image: alishukurov/nginx-task17:latest
     ports:
       - "80:80"
     depends_on:
@@ -13,8 +11,6 @@ services:
 
   apache_container:
     container_name: apache
-    build:
-      context: .
-      dockerfile: alishukurov/apache-task17:latest
+    image: alishukurov/apache-task17:latest
     ports:
       - "8080:80"
