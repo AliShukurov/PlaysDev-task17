@@ -5,7 +5,7 @@ services:
     container_name: nginx
     build:
       context: .
-      dockerfile: Dockerfile_nginx
+      dockerfile: alishukurov/nginx-task17:latest
     ports:
       - "80:80"
     depends_on:
@@ -15,6 +15,6 @@ services:
     container_name: apache
     build:
       context: .
-      dockerfile: Dockerfile_apache
+      dockerfile: alishukurov/apache-task17:latest
     ports:
       - "8080:80"
